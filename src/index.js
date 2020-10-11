@@ -2,7 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import store from './store/index';
+import { addArticle } from './actions/index';
 import * as serviceWorker from './serviceWorker';
+
+window.store = store;
+window.addArticle = addArticle;
 
 ReactDOM.render(
   <React.StrictMode>
